@@ -1,3 +1,6 @@
+void string(va_list args)
+{
+}
 /**
  * percent - prints a %.
  * @args: percent.

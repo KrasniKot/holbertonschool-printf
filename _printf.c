@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 	type fopt[] = {
 		{'c', character},
 		{'s', string},
-		{'%', percent};
+		{'%', percent},
 		{NULL, NULL}
 	};
 
@@ -23,9 +23,9 @@ int _printf(const char *format, ...)
 		while (fopt[j].option)
 		{
 
-			if (format[i] == '%)
+			if (format[i] == '%')
 			{
-				fopt[j].function[args];
+				fopt[j].function(args);
 			}
 			j++;
 		}
