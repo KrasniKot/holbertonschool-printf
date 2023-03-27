@@ -1,4 +1,5 @@
 #include "main.h"
+void percent(va_list args)
 /**
  *
  *
@@ -12,3 +13,5 @@ int _printf(const char *format, ...)
 	while (format && format[i])
 		i++;
 	opciones[j].function[args];
+
+
