@@ -22,13 +22,16 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == 37)
 		{
+			i++;
 			for (j = 0; fopt[j].option; j++)
 			{
 				if (format[i] == fopt[j].option)
 				{
 					fopt[j].function(arg);
+					i++;
 				}
 			}
+			j = 0;
 		}
 		pch(format[i]);
 	}

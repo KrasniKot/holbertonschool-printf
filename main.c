@@ -2,9 +2,7 @@
 
 int main(void)
 {
-	_printf("string");
-	putchar (10);
-	_printf("string and %s", string);
+	_printf("character: %c", 'c');
 	putchar (10);
 
 	return (0);

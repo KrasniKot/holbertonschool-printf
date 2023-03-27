@@ -6,13 +6,13 @@
 typedef struct fc
 {
 	char option;
-	void (*function)(va_list args);
+	void (*function)(va_list arg);
 } type;
 
 int _printf(const char *format, ...);
-void character(va_list args);
-void string(va_list args);
-void percent(va_list args);
+void character(va_list arg);
+void string(va_list arg);
+void percent(va_list arg);
 int pch(char c);
 
 #endif
