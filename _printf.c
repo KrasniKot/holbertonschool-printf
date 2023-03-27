@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	type opciones[] = {
+	type fopt[] = {
 		{'c', character},
 		{'s', string},
 		{'%', percent};
@@ -17,7 +17,17 @@ int _printf(const char *format, ...)
 	int i = 0, j = 0;
 
 	va_start(args, format);
+
 	while (format && format[i])
-	{	i++;
-		opciones[j].function[args];
+	{
+		while (fopt[j].option)
+		{
+
+			if (format[i] == '%)
+			{
+				fopt[j].function[args];
+			}
+			j++;
+		}
+		i++;
 	}

@@ -4,7 +4,7 @@
 
 typedef struct fc
 {
-	char *opcion;
+	char *option;
 	void (*function)(valist args);
 } type;
 
