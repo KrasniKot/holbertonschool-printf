@@ -1,36 +1,4 @@
 #include "main.h"
-/**
- *
- */
-void character(va_list args)
-{
-        pch(va_arg(args, int));
-}
-/**
- *
- */
-void string(va_list args)
-{
-        int i = 0;
-
-        while(va_arg(args, char *))
-        {
-                i++;
-        }
-
-        for (; i >= 0; i--)
-        {
-                pch(va_arg(args, int));
-        }
-}
-/**
- * percent - prints a %.
- * @args: percent.
- */
-void percent(va_list args)
-{
-        pch(va_arg(args, int));
-}
 
 /**
  *
@@ -45,28 +13,26 @@ int _printf(const char *format, ...)
 		{'\0', '\0'}
 	};
 
-	va_list args;
-	int i = 0, j = 0;
+	int i, j;
+	va_list arg;
 
-	va_start(args, format);
+	va_start(arg, format);
 
-	while (format && format[i])
+	for (i = 0; format && format[i]; i++)
 	{
-		pch(49);
-		while (fopt[j].option)
+		if (format[i] == 37)
 		{
-			pch(50);
-
-			if (format[i] == '%')
+			for (j = 0; fopt[j].option; j++)
 			{
-				fopt[j].function(args);
+				if (format[i] == fopt[j].option)
+				{
+					fopt[j].function(arg);
+				}
 			}
-			j++;
 		}
-		i++;
+		pch(format[i]);
 	}
-	va_end(args);
+	va_end(arg);
 
-	pch(48);
 	return (0);
 }

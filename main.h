@@ -10,6 +10,9 @@ typedef struct fc
 } type;
 
 int _printf(const char *format, ...);
+void character(va_list args);
+void string(va_list args);
+void percent(va_list args);
 int pch(char c);
 
 #endif

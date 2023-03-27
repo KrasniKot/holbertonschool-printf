@@ -1,5 +1,5 @@
 #!/bin/bash
-rm .*.swp a.out main.c
+rm .*.swp a.out
 git add .
 read var
 git commit -m $var
