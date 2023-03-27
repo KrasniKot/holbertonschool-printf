@@ -1,10 +1,5 @@
 #include "main.h"
 
-void percent(va_list args)
-{
-
-}
-
 /**
  *
  *
@@ -12,10 +7,14 @@ void percent(va_list args)
 int _printf(const char *format, ...)
 {
 	type opciones[] = {
-		{%, percent};
+		{'c', character},
+		{'s', string},
+		{'%', percent};
+		{NULL, NULL}
 	};
+
 	va_list args;
-	int i = 0;
+	int i = 0, j = 0;
 
 	va_start(args, format);
 	while (format && format[i])
