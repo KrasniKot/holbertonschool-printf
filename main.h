@@ -17,6 +17,7 @@ typedef struct fc
 } type;
 
 int _printf(const char *format, ...);
+int get_op_func(va_list arg, char op);
 int character(va_list arg);
 int string(va_list arg);
 int percent(va_list arg);
