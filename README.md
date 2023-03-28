@@ -1,4 +1,5 @@
 # _printf
 
-_printf is a replica of c function printf.
-_printf: format and print data
+_printf is a replica of c standar library function printf.
+_printf: format and print data to 'stdout'.
+
