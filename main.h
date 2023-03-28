@@ -20,6 +20,8 @@ int _printf(const char *format, ...);
 int character(va_list arg);
 int string(va_list arg);
 int percent(va_list arg);
+int decimal(va_list arg);
+void printer(int x);
 int pch(char c);
 
 #endif

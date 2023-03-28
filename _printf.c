@@ -11,10 +11,12 @@ int _printf(const char *format, ...)
 		{'c', character},
 		{'s', string},
 		{'%', percent},
+		{'d', decimal},
+		{'i', decimal},
 		{'\0', '\0'}
 	};
 
-	int i, j;
+	int i, j, len;
 	va_list arg;
 
 	va_start(arg, format);
@@ -29,15 +31,20 @@ int _printf(const char *format, ...)
 				{
 					i++;
 					fopt[j].function(arg);
+					len++;
 				}
 			}
 			j = 0;
 		}
 		else
+		{
 			pch(format[i]);
+			len++;
+		}
 	}
 
 	va_end(arg);
 
-	return (0);
+
+	return (len);
 }
