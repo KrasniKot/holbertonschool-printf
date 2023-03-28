@@ -1,8 +1,9 @@
 #include "main.h"
-
 /**
- *
- *
+ * _printf - main function
+ * Description: print string and calls a function
+ * @format: args
+ * Return: 0
  */
 int _printf(const char *format, ...)
 {
@@ -22,17 +23,18 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == 37)
 		{
-			i += 2;
 			for (j = 0; fopt[j].option; j++)
 			{
-				if (format[i - 1] == fopt[j].option)
+				if (format[i + 1] == fopt[j].option)
 				{
+					i++;
 					fopt[j].function(arg);
 				}
 			}
 			j = 0;
 		}
-		pch(format[i]);
+		else
+			pch(format[i]);
 	}
 
 	va_end(arg);

@@ -13,9 +13,10 @@ int main(void)
 	putchar (10);
 	_printf("");
 	putchar (10);
-	_printf("String");
+	_printf("Ale");
 	_printf(" and %s.", "string");
 	putchar (10);
+	_printf("string %s string", "and");
 
 	return (0);
 }
