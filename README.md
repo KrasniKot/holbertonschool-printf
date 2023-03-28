@@ -7,8 +7,11 @@
 ## Usage
 
 Once cloned over, the repository must contain the following files:
-| First Header  | Second Header |
+| File  	| Description   |
 | ------------- | ------------- |
+| _printf.c     | main file of the function  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
