@@ -1,21 +1,22 @@
 #include "main.h"
 
-void character(va_list arg)
+int character(va_list arg)
 {
-        printf("%c", va_arg(arg, int));
+        pch(va_arg(arg, int));
 }
 
-void string(va_list arg)
+int string(va_list arg)
 {
-	char *s = va_arg(arg, char *);
 	int i;
+	char *s = va_arg(arg, char *);
 
 	for (i = 0; s[i]; i++)
 	{
 		pch(s[i]);
 	}
+	return (i);
 }
-void percent(va_list arg)
+int percent(va_list arg)
 {
 	pch(37);
 }
