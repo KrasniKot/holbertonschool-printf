@@ -9,10 +9,9 @@
 Once cloned over, the repository must contain the following files:
 | File  	| Description   |
 | ------------- | ------------- |
-| _printf.c     | main file of the function  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| _printf.c     | main file of the function         |
+| main.h        | _printf header                    |
+| func.c        | contains all the formats admitted.|
+| pch.c  	| 1 byte printer  	            |
 
  
