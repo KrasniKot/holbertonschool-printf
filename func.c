@@ -3,7 +3,7 @@
  * character - prints a character
  * @arg: parameter
  * Description: prints a character
- * Return: 0
+ * Return: 1
  */
 int character(va_list arg)
 {
@@ -13,7 +13,7 @@ int character(va_list arg)
 /**
  * string - prints a string
  * @arg: parameter
- * Return: 0
+ * Return: len
  */
 int string(va_list arg)
 {
@@ -31,7 +31,7 @@ int string(va_list arg)
 /**
  * percent - prints a percent
  * @arg: parameter
- * Return: 0
+ * Return: 1
  */
 int percent(va_list arg)
 {
@@ -39,7 +39,11 @@ int percent(va_list arg)
 	pch(37);
 	return (1);
 }
-
+/**
+ * decimal - prints a decimal
+ * @arg: parameters
+ * Return: len
+ */
 int decimal(va_list arg)
 {
 	int n = va_arg(arg, int);
@@ -56,7 +60,11 @@ int decimal(va_list arg)
 	printer(n);
 	return (i);
 }
-
+/**
+ * printer - prints a number
+ * @x: number printed
+ * Return: nth
+ */
 void printer(int x)
 {
 	if (x / 10)

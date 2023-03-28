@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 
 	for (i = 0; format[i]; i++)
 	{
-		if(format[i] == 37)
+		if (format[i] == 37)
 		{
 			if (!format[i + 1])
 				return (-1);
