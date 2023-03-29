@@ -47,7 +47,7 @@ int percent(va_list arg)
 int decimal(va_list arg)
 {
 	int n = va_arg(arg, int);
-	int i = 0;
+	int i = 0, nc = n;
 
 	if (n < 0)
 	{
@@ -56,6 +56,18 @@ int decimal(va_list arg)
 		i++;
 	}
 
+	if (n == 0)
+	{
+		pch(48);
+		i++;
+		return (i);
+	}
+
+	while (nc != 0)
+	{
+		nc /= 10;
+		i++;
+	}
 
 	printer(n);
 	return (i);

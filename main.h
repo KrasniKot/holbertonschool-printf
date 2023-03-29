@@ -24,5 +24,4 @@ int percent(va_list arg);
 int decimal(va_list arg);
 void printer(int x);
 int pch(char c);
-
 #endif
