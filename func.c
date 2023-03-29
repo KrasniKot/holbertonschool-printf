@@ -78,7 +78,7 @@ int decimal(va_list arg)
  * @x: number printed
  * Return: nth
  */
-void printer(int x)
+void printer(long int x)
 {
 	if (x / 10)
 		printer(x / 10);
