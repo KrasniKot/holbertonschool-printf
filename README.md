@@ -47,7 +47,7 @@ __The conversion specifiers that__ `_printf` __accepts are:__
 
 * __s:__ The `char *` argument given, will print the string (except the '\0' byte).
 * __c:__ The `char ` argument given, will print the byte.
-* __i:__ & __d__ The `int`. argument given, will print the integer. 
+* __i__ & __d__: The `int`. argument given, will print the integer. 
 
 Note that you can write `%%`, and you will obtain `%` as output.
 
