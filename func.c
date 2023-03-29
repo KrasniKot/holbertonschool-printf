@@ -46,8 +46,9 @@ int percent(va_list arg)
  */
 int decimal(va_list arg)
 {
-	int n = va_arg(arg, int);
-	int i = 0, nc = n;
+	long int n = va_arg(arg, int);
+	long int nc = n;
+	int = 0;
 
 	if (n < 0)
 	{
