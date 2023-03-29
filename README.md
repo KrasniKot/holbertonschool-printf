@@ -40,11 +40,21 @@ $ ./a.out
 String$
 ```
 
-### Format
+
+### Conversion Specifiers
+
+__The conversion specifiers that__ `_printf` __accepts are:__
+
+* __s:__ The `char *` argument given, will print the string (except the '\0' byte).
+* __c:__ The `char ` argument given, will print the byte.
+* __i:__ & __d__ The `int`. argument given, will print the integer. 
+
+Note that you can write `%%`, and you will obtain `%` as output.
 
 ### Return Value
 
-### Conversion Specifiers
+Upon succeful excecution, `_printf` will return the number of bytes printed (excluded the '\0' byte). Upon a error output the return value will be `-1`.
+
 
 ## Authors
 
