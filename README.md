@@ -40,21 +40,39 @@ $ ./a.out
 String$
 ```
 
-
 ### Conversion Specifiers
 
 __The conversion specifiers that__ `_printf` __accepts are:__
 
 * __s:__ The `char *` argument given, will be printed (except the '\0' byte).
 * __c:__ The `char ` argument given, will be printed.
-* __i__ & __d__: The `int`. argument given, will be printed as integer. 
+* __i__ & __d__: The `int` argument given, will be printed as integer. 
 
-Note that you can write `%%`, and you will obtain `%` as output.
+Note that you can type `%%`, and you will obtain `%` as output.
+
 
 ### Return Value
 
 Upon succeful excecution, `_printf` will return the number of bytes printed (excluded the '\0' byte). Upon a error output the return value will be `-1`.
 
+__Examples:__
+
+1:
+```
+#include "main.h"
+
+void main(void)
+{
+	_printf("A %sis composed by %d byte", "character ", 1);
+}
+```
+
+Output:
+
+```
+$ ./a.out
+A character is composed by 1 byte.$
+```
 
 ## Authors
 
