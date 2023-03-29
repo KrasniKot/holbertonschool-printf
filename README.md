@@ -1,7 +1,6 @@
 # _printf
 
- `_printf`: is a replica of c standar library function printf
- `_printf`: format and print data to `stdout`.
+ `_printf`: is a replica of c standar library function printf. This function writes under the control of a format to the stdout. 
 
 
 ## Prototype
@@ -18,7 +17,8 @@ Once cloned over, the repository must contain the following files:
 | _printf.c     | main file of the function         |
 | main.h        | _printf header                    |
 | func.c        | contains all the formats admitted.|
-| pch.c  	| 1 byte printer  	            |
+| get_func.c 	| calls the concerned function	    |
+| pch.c    	| one byte printer      	    |
 
 Example:
 
@@ -39,3 +39,5 @@ Output:
 $ ./a.out
 String$
 ```
+
+
