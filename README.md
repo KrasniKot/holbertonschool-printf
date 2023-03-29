@@ -48,5 +48,5 @@ String$
 
 ## Authors
 
-* Alejandro Martinez [Git Hub] (https://github.com/alemao51092)
-* Emanuel Trias [Git Hub] (https://github.com/KrasniKot)
+* Alejandro Martinez [Git Hub](https://github.com/alemao51092)
+* Emanuel Trias [Git Hub](https://github.com/KrasniKot)
