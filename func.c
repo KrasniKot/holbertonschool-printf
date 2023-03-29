@@ -48,7 +48,7 @@ int decimal(va_list arg)
 {
 	long int n = va_arg(arg, int);
 	long int nc = n;
-	int = 0;
+	int i = 0;
 
 	if (n < 0)
 	{
