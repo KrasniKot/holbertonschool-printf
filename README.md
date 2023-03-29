@@ -40,4 +40,13 @@ $ ./a.out
 String$
 ```
 
+### Format
 
+### Return Value
+
+### Conversion Specifiers
+
+## Authors
+
+* Alejandro Martinez [Git Hub] (https://github.com/alemao51092)
+* Emanuel Trias [Git Hub] (https://github.com/KrasniKot)
