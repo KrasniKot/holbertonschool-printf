@@ -16,7 +16,8 @@ Once cloned over, the repository must contain the following files:
 | ------------- | ------------- |
 | _printf.c     | main file of the function         |
 | main.h        | _printf header                    |
-| func.c        | contains all the formats admitted.|
+| func.c        | contains some admitted formats    |
+| 1func.c        | contains some admited formats     |
 | get_func.c 	| calls the concerned function	    |
 | pch.c    	| one byte printer      	    |
 

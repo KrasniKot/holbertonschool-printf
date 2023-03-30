@@ -76,7 +76,7 @@ int decimal(va_list arg)
 /**
  * printer - prints a number
  * @x: number printed
- * Return: nth
+ * Return: nth.
  */
 void printer(long int x)
 {

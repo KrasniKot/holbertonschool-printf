@@ -2,6 +2,7 @@
 #define _printf_
 #include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
 /**
  * struct fc - function choicer
  * Description: struct
@@ -22,6 +23,8 @@ int character(va_list arg);
 int string(va_list arg);
 int percent(va_list arg);
 int decimal(va_list arg);
+int binary(va_list arg);
+int rot13(va_list arg);
 void printer(long int x);
 int pch(char c);
 #endif

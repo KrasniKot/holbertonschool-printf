@@ -14,6 +14,8 @@ int get_op_func(va_list arg, char op)
 		{'%', percent},
 		{'d', decimal},
 		{'i', decimal},
+		{'b', binary},
+		{'R', rot13},
 		{'\0', '\0'}
 	};
 

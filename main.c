@@ -13,6 +13,7 @@ int main(void)
     int len2;
     unsigned int ui;
     void *addr;
+    unsigned int an = 89;
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -40,6 +41,9 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
-     _printf("A %sis composed by %d byte", "character ", 1);
+     _printf("A %sis composed by %d byte \n", "character ", 1);
+     _printf("binary of %d is: %b\n", an, an);
+     _printf("biniary of 98 is: %b\n", 98);
+     _printf("%R", "this is a roted string\n");
     return (0);
 }
