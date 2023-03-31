@@ -26,7 +26,7 @@ int binary(va_list arg)
 		pch(buf[i]);
 	}
 
-	return(len - 1);
+	return(len);
 }
 
 /**
