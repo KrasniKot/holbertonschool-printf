@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * binary - prints a integer in binary.
  * @arg: integer.
@@ -9,7 +10,7 @@ int binary(va_list arg)
 	unsigned int n = va_arg(arg, unsigned int);
 	unsigned int nc = n;
 	int l = 0;
-	int len = 0;
+	unsigned int len = 0;
 	char *s;
 
 	while (nc > 0)
@@ -37,6 +38,7 @@ int binary(va_list arg)
 
 	return (len);
 }
+
 /**
  * rot13 - prints a string in rot13.
  * @arg: char *.
@@ -52,7 +54,7 @@ int rot13(va_list arg)
 
 	for (i = 0; c[i]; i++)
 	{
-		if (c[i] < 65 || c[i] > 90 && c[i] < 97 || c[i] > 122)
+		if ((c[i] < 65 || c[i] > 90) && (c[i] < 97 || c[i] > 122))
 		{
 			pch(c[i]);
 			len++;
