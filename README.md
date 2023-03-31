@@ -74,6 +74,8 @@ Output:
 $ ./a.out
 A character is composed by 1 byte.$
 ```
+
+### Flowchart:
 ![Image not available](https://github.com/KrasniKot/holbertonschool-printf/blob/Emanuel/Diagrama_en_blanco.png)
 
 ## Authors
