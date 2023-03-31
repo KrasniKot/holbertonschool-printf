@@ -8,35 +8,25 @@
 int binary(va_list arg)
 {
 	unsigned int n = va_arg(arg, unsigned int);
-	unsigned int nc = n;
-	int l = 0;
-	unsigned int len = 0;
-	char *s;
+	char buf[33];
+	int len = 0, i = 0;
 
-	while (nc > 0)
+	while (n > 0)
 	{
-		nc /= 2;
-		l++;
-	}
-
-	l += 1;
-	s = malloc(sizeof(char) * l);
-	l -= 1;
-
-	while (l != 0)
-	{
-		s[l] = n % 2 + 48;
+		buf[i] = n % 2 + 48;
 		n /= 2;
 		len++;
-		l--;
-	}
-	while (nc <= len)
-	{
-		pch(s[nc]);
-		nc++;
+		i++;
 	}
 
-	return (len);
+	i -= 1;
+
+	for (; i >= 0; i--)
+	{
+		pch(buf[i]);
+	}
+
+	return(len);
 }
 
 /**
