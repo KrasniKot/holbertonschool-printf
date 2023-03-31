@@ -74,7 +74,7 @@ Output:
 $ ./a.out
 A character is composed by 1 byte.$
 ```
-|
+![Image not available](/main/Emanuel/diagrama_en_blanco.png)
 
 ## Authors
 
