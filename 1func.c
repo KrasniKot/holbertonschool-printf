@@ -11,6 +11,12 @@ int binary(va_list arg)
 	char buf[33];
 	int len = 0, i = 0;
 
+	if (n < 1)
+	{
+		pch(48);
+		return (1);
+	}
+
 	while (n > 0)
 	{
 		buf[i] = n % 2 + 48;
