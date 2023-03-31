@@ -47,9 +47,10 @@ __The conversion specifiers that__ `_printf` __accepts are:__
 
 * __s:__ The `char *` argument given, will be printed (except the '\0' byte).
 * __c:__ The `char ` argument given, will be printed.
-* __i__ & __d__: The `int` argument given, will be printed as integer. 
-
-Note that you can type `%%`, and you will obtain `%` as output.
+* __i__ & __d:__ The `int` argument given, will be printed as integer.
+* __%:__ A '%' will be printed.
+* __b:__ The `unsigned int ` argument given, will be printed as binary.
+* __R:__ The `char *` argument given, will be encrypted in rot13 and then printed.
 
 
 ### Return Value
