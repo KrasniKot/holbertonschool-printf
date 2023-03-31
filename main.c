@@ -44,6 +44,7 @@ int main(void)
      _printf("A %sis composed by %d byte \n", "character ", 1);
      _printf("binary of %d is: %b\n", an, an);
      _printf("biniary of 98 is: %b\n", 98);
-     _printf("%R", "this is a roted string\n");
+     _printf("%R", "this is a rot13'ed string\n");
+     _printf("%b\n", "78888");
     return (0);
 }

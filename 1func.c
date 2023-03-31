@@ -16,20 +16,18 @@ int binary(va_list arg)
 	{
 		nc /= 2;
 		l++;
-		
 	}
 
 	l += 1;
 	s = malloc(sizeof(char) * l);
 	l -= 1;
-	
+
 	while (l != 0)
 	{
 		s[l] = n % 2 + 48;
 		n /= 2;
 		len++;
 		l--;
-	
 	}
 	while (nc <= len)
 	{
