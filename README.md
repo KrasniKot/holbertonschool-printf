@@ -1,6 +1,6 @@
 # _printf
 
- `_printf`: is a replica of c standar library function printf. This function writes under the control of a format to the stdout. 
+ `_printf`: is a replica of c standard library function printf. This function writes under the control of a format to the stdout. 
 
 
 ## Prototype
