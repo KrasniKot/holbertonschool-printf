@@ -17,7 +17,7 @@ _printf is a replica of c standard library function printf (short for print "for
 
 The format string is a character wich set out the given argument alredy converted. In order the format to be applied the syntax of a conversion is:
 .IP
-%[conversion specifiers] 
+%[conversion specifiers]
 
 .TP
 .BR c
@@ -45,7 +45,7 @@ Each byte of the char * argument is moved 13 alphabet letters down.
 
 .SH RETURN VALUE
 
-Upon successful return,these functions return the number of characters printed (excluding the null byte ('\\0') used to end output to strings). 
+Upon successful return,these functions return the number of characters printed (excluding the null byte ('\\0') used to end output to strings).
 
 If an output error is encountered, a negative value will be returned.
 
