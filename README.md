@@ -49,7 +49,7 @@ __The conversion specifiers that__ `_printf` __accepts are:__
 * __c:__ The `char ` argument given, will be printed.
 * __i__ & __d:__ The `int` argument given, will be printed as integer.
 * __%:__ A '%' will be printed.
-* __b:__ The `unsigned int ` argument given, will be printed as binary.
+* __b:__ The `unsigned int` argument given, will be printed as binary.
 * __R:__ The `char *` argument given, will be encrypted in rot13 and then printed.
 
 
@@ -65,7 +65,7 @@ __Examples:__
 
 void main(void)
 {
-	_printf("A %sis composed by %d byte", "character ", 1);
+	_printf("A %sis composed by %d byte.\n", "character ", 1);
 }
 ```
 
@@ -73,7 +73,25 @@ Output:
 
 ```
 $ ./a.out
-A character is composed by 1 byte.$
+A character is composed by 1 byte.
+$
+```
+2:
+```
+#include "main.h"
+
+void main(void)
+{
+	_printf("%R%b\n", "Ahzore 98 va onfr 2 vf: " ,98);
+}
+```
+
+Output:
+
+```
+$ ./a.out
+Number 98 in base 2 is: 1100010
+$
 ```
 
 ### Flowchart:

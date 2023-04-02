@@ -67,32 +67,3 @@ int rot13(va_list arg)
 	}
 	return (len);
 }
-int octal(va_list arg)
-{
-	unsigned int n = va_arg(arg, unsigned int);
-        char buf[44];
-        int len = 0, i = 0;
-
-        if (n < 1)
-        {
-                pch(48);
-                return (1);
-        }
-
-        while (n > 0)
-        {
-                buf[i] = n % 2 + 48;
-                n /= 2;
-                len++;
-                i++;
-        }
-
-        i -= 1;
-
-        for (; i >= 0; i--)
-        {
-                pch(buf[i]);
-        }
-
-        return(len);
-}

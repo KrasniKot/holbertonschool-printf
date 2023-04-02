@@ -1,40 +1,62 @@
-.TH NAME man_3_printf
+.TH _printf 1
 
- _printf
+.SH NAME
+_printf - replica of C standard library function printf.
+
 .SH SYNOPSIS
-#include "main.h"
 
-int _printf(const char *format, ...);
+	#include "main.h"
+
+	int _printf(const char *format, ...)
 
 .SH DESCRIPTION
-_printf is a replica of c standar library function printf (short for print "formatted").
-This function writes under the control of the format to the stdout.
 
+_printf is a replica of c standard library function printf (short for print "formatted"). This function writes under the control of a format to the stdout.
 
 .SH Format of the format string.
 
-The format string is a character wich set out the given argument alredy converted. 
-In order the format to be applied the syntax of a conversion is:
-	%[conversion specifiers] 
+The format string is a character wich set out the given argument alredy converted. In order the format to be applied the syntax of a conversion is:
+.IP
+%[conversion specifiers] 
 
+.TP
 .BR c
 the int argument is converted to a unsigned char , and the resulting character is written.
 
+.TP
 .BR s
-the const char * argument is an array of character.Characters from the array are written up to (except) a terminating nullbyte ('\0').
+the const char * argument is an array of character.Characters from the array are written up to (except) a terminating nullbyte ('\\0').
 
+.TP
 .BR %
 A '%' is written.  No argument is converted.  The complete conversion specification is '%%'.
 
-.BR d, i
+.TP
+.BR d\ i
 The int argument is converted to signed decimal notation.
+
+.TP
+.BR b
+The unsigned int argument is converted to base 2.
+
+.TP
+.BR R
+Each byte of the char * argument is moved 13 alphabet letters down.
 
 .SH RETURN VALUE
 
-Upon successful return,these functions return the number of characters printed (excluding the null byte used to end output to strings). 
+Upon successful return,these functions return the number of characters printed (excluding the null byte ('\\0') used to end output to strings). 
 
 If an output error is encountered, a negative value will be returned.
 
-.SH AUTHORs
-Emanuel Trias and Alejandro Martinez.
+.SH BUGS
 
+There are no bugs known.
+
+.SH SEE ALSO
+
+printf(3)
+
+.SH AUTHORS
+
+Emanuel Trias and Alejandro Martinez.
